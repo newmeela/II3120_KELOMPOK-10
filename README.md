@@ -1,6 +1,5 @@
 # II3120_KELOMPOK-10
-aplikasi TAP RENT SEWA PINJAM
-# TapRent
+# TAP RENT SEWA PINJAM
 
 TapRent adalah prototipe penyewaan barang kampus untuk II3120, Kelompok K1–G10. Implementasi mengikuti wireframe Bab III revisi dan alur dari penawaran, pencarian, pengajuan, pembayaran simulasi, serah terima RFID, hingga pemeriksaan akhir.
 
