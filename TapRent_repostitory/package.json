@@ -1,0 +1,6 @@
+{
+  "name": "taprent-prototipe",
+  "private": true,
+  "scripts": {"test": "bash tests/run_tests.sh"},
+  "devDependencies": {"playwright": "^1.51.0"}
+}

@@ -1,0 +1,4 @@
+sentence_transformer | Tripod Aluminium | 0.6221
+sentence_transformer | Mikrofon Lavalier | 0.3790
+sentence_transformer | Kalkulator Ilmiah | 0.0467
+LULUS · model aktual, penawaran SQLite, anggaran, dan konflik jadwal.

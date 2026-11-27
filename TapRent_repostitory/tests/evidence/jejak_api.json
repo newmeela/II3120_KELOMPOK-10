@@ -1,0 +1,5386 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": []
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": []
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/offers",
+    "input": null,
+    "status": 200,
+    "actual": []
+  },
+  {
+    "method": "POST",
+    "path": "/api/offers",
+    "input": {
+      "name": "Kalkulator",
+      "description": "Perhitungan matematika",
+      "daily_rate": 10000,
+      "available_from": "2026-11-27",
+      "available_until": "2026-11-28",
+      "location": "Titik penitipan",
+      "terms": "Kembalikan lengkap",
+      "rfid_uid": "DEMO0001"
+    },
+    "status": 201,
+    "actual": {
+      "id": 1,
+      "name": "Kalkulator",
+      "description": "Perhitungan matematika",
+      "daily_rate": 10000,
+      "available_from": "2026-11-27",
+      "available_until": "2026-11-28",
+      "terms": "Kembalikan lengkap",
+      "location": "Titik penitipan",
+      "photo": null,
+      "active": 1,
+      "rfid_uid": "DEMO0001"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/offers",
+    "input": {
+      "name": "Tripod Aluminium",
+      "description": "Dudukan ponsel stabil untuk merekam video",
+      "daily_rate": 15000,
+      "available_from": "2026-11-27",
+      "available_until": "2026-11-28",
+      "location": "Titik penitipan",
+      "terms": "Kembalikan lengkap",
+      "rfid_uid": "DEMO0002"
+    },
+    "status": 201,
+    "actual": {
+      "id": 2,
+      "name": "Tripod Aluminium",
+      "description": "Dudukan ponsel stabil untuk merekam video",
+      "daily_rate": 15000,
+      "available_from": "2026-11-27",
+      "available_until": "2026-11-28",
+      "terms": "Kembalikan lengkap",
+      "location": "Titik penitipan",
+      "photo": null,
+      "active": 1,
+      "rfid_uid": "DEMO0002"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/offers",
+    "input": {
+      "name": "Mikrofon",
+      "description": "Merekam audio",
+      "daily_rate": 10000,
+      "available_from": "2026-11-27",
+      "available_until": "2026-11-28",
+      "location": "Titik penitipan",
+      "terms": "Kembalikan lengkap",
+      "rfid_uid": "DEMO0003"
+    },
+    "status": 201,
+    "actual": {
+      "id": 3,
+      "name": "Mikrofon",
+      "description": "Merekam audio",
+      "daily_rate": 10000,
+      "available_from": "2026-11-27",
+      "available_until": "2026-11-28",
+      "terms": "Kembalikan lengkap",
+      "location": "Titik penitipan",
+      "photo": null,
+      "active": 1,
+      "rfid_uid": "DEMO0003"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": []
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": []
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items/search?q=tripod&starts=2026-11-27&ends=2026-11-28&budget=25000",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "mode": "keyword_fallback",
+      "items": [
+        {
+          "id": 2,
+          "name": "Tripod Aluminium",
+          "description": "Dudukan ponsel stabil untuk merekam video",
+          "daily_rate": 15000,
+          "available_from": "2026-11-27",
+          "available_until": "2026-11-28",
+          "terms": "Kembalikan lengkap",
+          "location": "Titik penitipan",
+          "photo": null,
+          "active": 1,
+          "total": 15000
+        }
+      ],
+      "criteria": {
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "days": 1,
+        "budget": 25000
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": []
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items/search?starts=2026-11-27&ends=2026-11-28&q=tripod&budget=10000",
+    "status": 200,
+    "actual": {
+      "mode": "keyword_fallback",
+      "items": [],
+      "criteria": {
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "days": 1,
+        "budget": 10000
+      }
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings",
+    "input": {
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "accept_terms": true,
+      "expected_terms": "Kembalikan lengkap",
+      "item_id": 2
+    },
+    "status": 201,
+    "actual": {
+      "id": 1,
+      "item_id": 2,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 15000,
+      "pickup_code": null,
+      "status": "MENUNGGU_PERSETUJUAN",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Tripod Aluminium",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": null,
+        "status": "MENUNGGU_PERSETUJUAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": null,
+        "status": "MENUNGGU_PERSETUJUAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": null,
+        "status": "MENUNGGU_PERSETUJUAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings",
+    "input": {
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "item_id": 3
+    },
+    "status": 400,
+    "actual": {
+      "error": "Setujui ketentuan sewa untuk melanjutkan."
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": null,
+        "status": "MENUNGGU_PERSETUJUAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings/1/approve",
+    "input": {},
+    "status": 403,
+    "actual": {
+      "error": "Aksi tidak tersedia untuk peran ini."
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings",
+    "input": {
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "item_id": 3,
+      "accept_terms": true
+    },
+    "status": 201,
+    "actual": {
+      "id": 2,
+      "item_id": 3,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 10000,
+      "pickup_code": null,
+      "status": "MENUNGGU_PERSETUJUAN",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Mikrofon",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings",
+    "input": {
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "item_id": 3,
+      "accept_terms": true
+    },
+    "status": 409,
+    "actual": {
+      "error": "SCHEDULE_CONFLICT"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings",
+    "input": {
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "item_id": 3,
+      "accept_terms": true
+    },
+    "status": 409,
+    "actual": {
+      "error": "SCHEDULE_CONFLICT"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings/2/reject",
+    "input": {},
+    "status": 200,
+    "actual": {
+      "id": 2,
+      "item_id": 3,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 10000,
+      "status": "DITOLAK",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        },
+        {
+          "status": "DITOLAK",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan ditolak pemilik"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Mikrofon",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings",
+    "input": {
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "item_id": 3,
+      "accept_terms": true
+    },
+    "status": 201,
+    "actual": {
+      "id": 3,
+      "item_id": 3,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 10000,
+      "pickup_code": null,
+      "status": "MENUNGGU_PERSETUJUAN",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Mikrofon",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings/3/cancel",
+    "input": {},
+    "status": 200,
+    "actual": {
+      "id": 3,
+      "item_id": 3,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 10000,
+      "pickup_code": null,
+      "status": "DIBATALKAN",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        },
+        {
+          "status": "DIBATALKAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Reservasi dibatalkan sebelum penitipan"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Mikrofon",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings",
+    "input": {
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "item_id": 2,
+      "accept_terms": true
+    },
+    "status": 409,
+    "actual": {
+      "error": "SCHEDULE_CONFLICT"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items/search?starts=2026-11-27&ends=2026-11-28&q=tripod&budget=25000",
+    "status": 200,
+    "actual": {
+      "mode": "keyword_fallback",
+      "items": [],
+      "criteria": {
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "days": 1,
+        "budget": 25000
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/offers",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "MENUNGGU_PERSETUJUAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/offers",
+    "input": {
+      "name": "Penyangga Ponsel Meja",
+      "description": "Dudukan smartphone stabil untuk perekaman video.",
+      "daily_rate": 12000,
+      "available_from": "2026-11-27",
+      "available_until": "2026-11-28",
+      "location": "Titik penitipan TapRent ITB",
+      "rfid_uid": "DEMO-NEW-01",
+      "terms": "Kembalikan dengan penjepit lengkap."
+    },
+    "status": 201,
+    "actual": {
+      "id": 4,
+      "name": "Penyangga Ponsel Meja",
+      "description": "Dudukan smartphone stabil untuk perekaman video.",
+      "daily_rate": 12000,
+      "available_from": "2026-11-27",
+      "available_until": "2026-11-28",
+      "terms": "Kembalikan dengan penjepit lengkap.",
+      "location": "Titik penitipan TapRent ITB",
+      "photo": null,
+      "active": 1,
+      "rfid_uid": "DEMO-NEW-01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/offers",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "MENUNGGU_PERSETUJUAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/items/search?starts=2026-11-27&ends=2026-11-28&q=penyangga&budget=25000",
+    "status": 200,
+    "actual": {
+      "mode": "keyword_fallback",
+      "items": [
+        {
+          "id": 4,
+          "name": "Penyangga Ponsel Meja",
+          "description": "Dudukan smartphone stabil untuk perekaman video.",
+          "daily_rate": 12000,
+          "available_from": "2026-11-27",
+          "available_until": "2026-11-28",
+          "terms": "Kembalikan dengan penjepit lengkap.",
+          "location": "Titik penitipan TapRent ITB",
+          "photo": null,
+          "active": 1,
+          "total": 12000
+        }
+      ],
+      "criteria": {
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "days": 1,
+        "budget": 25000
+      }
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/offers/4/visibility",
+    "input": {
+      "active": false
+    },
+    "status": 200,
+    "actual": {
+      "active": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items/search?starts=2026-11-27&ends=2026-11-28&q=penyangga&budget=25000",
+    "status": 200,
+    "actual": {
+      "mode": "keyword_fallback",
+      "items": [],
+      "criteria": {
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "days": 1,
+        "budget": 25000
+      }
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings/1/approve",
+    "input": {},
+    "status": 200,
+    "actual": {
+      "id": 1,
+      "item_id": 2,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 15000,
+      "status": "DISETUJUI",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        },
+        {
+          "status": "DISETUJUI",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pemilik menyetujui pengajuan"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Tripod Aluminium",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "DISETUJUI",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/offers",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 0,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": null,
+        "status": "DISETUJUI",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": null,
+        "status": "DISETUJUI",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": null,
+        "status": "DISETUJUI",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings/1/pay",
+    "input": {
+      "simulation": true
+    },
+    "status": 200,
+    "actual": {
+      "id": 1,
+      "item_id": 2,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 15000,
+      "pickup_code": "26879D3B",
+      "status": "DIPESAN",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        },
+        {
+          "status": "DISETUJUI",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pemilik menyetujui pengajuan"
+        },
+        {
+          "status": "DIPESAN",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pembayaran simulasi tercatat"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Tripod Aluminium",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/iot/scan",
+    "input": {
+      "tag_id": "UNKNOWN",
+      "device_id": "MITRA_01",
+      "event_id": "unknown-tag"
+    },
+    "status": 422,
+    "actual": {
+      "event": {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      },
+      "duplicate": false
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/iot/scan",
+    "input": {
+      "tag_id": "DEMO0001",
+      "device_id": "MITRA_01",
+      "event_id": "mismatch-tag"
+    },
+    "status": 422,
+    "actual": {
+      "event": {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      "duplicate": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 0,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/rfid/scans",
+    "input": {
+      "tag_uid": "DEMO0002",
+      "device_id": "MITRA_01",
+      "scan_event_id": "esp32-test-1",
+      "scanned_at": "2026-11-27T15:10:45.330Z"
+    },
+    "status": 401,
+    "actual": {
+      "error": "DEVICE_UNAUTHORIZED"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/rfid/scans",
+    "input": {
+      "tag_uid": "DEMO0002",
+      "device_id": "MITRA_01",
+      "scan_event_id": "esp32-test-1",
+      "scanned_at": "2026-11-27T15:10:45.330Z"
+    },
+    "status": 201,
+    "actual": {
+      "event": {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": null
+      },
+      "duplicate": false
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/v1/rfid/scans",
+    "input": {
+      "tag_uid": "DEMO0002",
+      "device_id": "MITRA_01",
+      "scan_event_id": "esp32-test-1",
+      "scanned_at": "2026-11-27T15:10:45.330Z"
+    },
+    "status": 409,
+    "actual": {
+      "event": {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": null
+      },
+      "duplicate": true,
+      "error": "DUPLICATE_SCAN_EVENT"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/iot/scan",
+    "input": {
+      "tag_id": "DEMO0002",
+      "device_id": "MITRA_01",
+      "event_id": "burst"
+    },
+    "status": 409,
+    "actual": {
+      "event": {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      "duplicate": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": true
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": true
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "DIPESAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/iot/confirm",
+    "input": {
+      "condition": "Baik, kaki tripod dan penjepit lengkap",
+      "event_id": "esp32-test-1"
+    },
+    "status": 200,
+    "actual": {
+      "id": 1,
+      "item_id": 2,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 15000,
+      "status": "SIAP_DIAMBIL",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        },
+        {
+          "status": "DISETUJUI",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pemilik menyetujui pengajuan"
+        },
+        {
+          "status": "DIPESAN",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pembayaran simulasi tercatat"
+        },
+        {
+          "status": "SIAP_DIAMBIL",
+          "timestamp": "2026-11-27T22:10:51+07:00",
+          "note": "Baik, kaki tripod dan penjepit lengkap"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Tripod Aluminium",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 0,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "SIAP_DIAMBIL",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "SIAP_DIAMBIL",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/iot/scan",
+    "input": {
+      "tag_id": "DEMO0002",
+      "device_id": "MITRA_01",
+      "event_id": "95b1fec5-7a94-4f30-9f4a-6df315cc9a1c"
+    },
+    "status": 201,
+    "actual": {
+      "event": {
+        "event_id": "95b1fec5-7a94-4f30-9f4a-6df315cc9a1c",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SIAP_DIAMBIL",
+        "result": "VALID",
+        "confirmed_at": null
+      },
+      "duplicate": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "95b1fec5-7a94-4f30-9f4a-6df315cc9a1c",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SIAP_DIAMBIL",
+        "result": "VALID",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 0,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "SIAP_DIAMBIL",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/iot/confirm",
+    "input": {
+      "pickup_code": "SALAH",
+      "condition": "Baik, lengkap",
+      "event_id": "95b1fec5-7a94-4f30-9f4a-6df315cc9a1c"
+    },
+    "status": 422,
+    "actual": {
+      "error": "INVALID_PICKUP_CODE"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "SIAP_DIAMBIL",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/iot/confirm",
+    "input": {
+      "pickup_code": "26879D3B",
+      "condition": "Baik, lengkap",
+      "event_id": "95b1fec5-7a94-4f30-9f4a-6df315cc9a1c"
+    },
+    "status": 200,
+    "actual": {
+      "id": 1,
+      "item_id": 2,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 15000,
+      "status": "SEDANG_DIPINJAM",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        },
+        {
+          "status": "DISETUJUI",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pemilik menyetujui pengajuan"
+        },
+        {
+          "status": "DIPESAN",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pembayaran simulasi tercatat"
+        },
+        {
+          "status": "SIAP_DIAMBIL",
+          "timestamp": "2026-11-27T22:10:51+07:00",
+          "note": "Baik, kaki tripod dan penjepit lengkap"
+        },
+        {
+          "status": "SEDANG_DIPINJAM",
+          "timestamp": "2026-11-27T22:10:51+07:00",
+          "note": "Baik, lengkap"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Tripod Aluminium",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "SEDANG_DIPINJAM",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 0,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "95b1fec5-7a94-4f30-9f4a-6df315cc9a1c",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SIAP_DIAMBIL",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "SEDANG_DIPINJAM",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/iot/scan",
+    "input": {
+      "tag_id": "DEMO0002",
+      "device_id": "MITRA_01",
+      "event_id": "bbcafcf2-f06b-4c9b-8bfc-af1f83155020"
+    },
+    "status": 201,
+    "actual": {
+      "event": {
+        "event_id": "bbcafcf2-f06b-4c9b-8bfc-af1f83155020",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SEDANG_DIPINJAM",
+        "result": "VALID",
+        "confirmed_at": null
+      },
+      "duplicate": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "SEDANG_DIPINJAM",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "bbcafcf2-f06b-4c9b-8bfc-af1f83155020",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SEDANG_DIPINJAM",
+        "result": "VALID",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "95b1fec5-7a94-4f30-9f4a-6df315cc9a1c",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SIAP_DIAMBIL",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 0,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/iot/confirm",
+    "input": {
+      "condition": "Diterima lengkap dan dapat digunakan",
+      "event_id": "bbcafcf2-f06b-4c9b-8bfc-af1f83155020"
+    },
+    "status": 200,
+    "actual": {
+      "id": 1,
+      "item_id": 2,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 15000,
+      "status": "MENUNGGU_PEMERIKSAAN",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        },
+        {
+          "status": "DISETUJUI",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pemilik menyetujui pengajuan"
+        },
+        {
+          "status": "DIPESAN",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pembayaran simulasi tercatat"
+        },
+        {
+          "status": "SIAP_DIAMBIL",
+          "timestamp": "2026-11-27T22:10:51+07:00",
+          "note": "Baik, kaki tripod dan penjepit lengkap"
+        },
+        {
+          "status": "SEDANG_DIPINJAM",
+          "timestamp": "2026-11-27T22:10:51+07:00",
+          "note": "Baik, lengkap"
+        },
+        {
+          "status": "MENUNGGU_PEMERIKSAAN",
+          "timestamp": "2026-11-27T22:10:51+07:00",
+          "note": "Diterima lengkap dan dapat digunakan"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Tripod Aluminium",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "bbcafcf2-f06b-4c9b-8bfc-af1f83155020",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SEDANG_DIPINJAM",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "95b1fec5-7a94-4f30-9f4a-6df315cc9a1c",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SIAP_DIAMBIL",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 0,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "MENUNGGU_PEMERIKSAAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          },
+          {
+            "status": "MENUNGGU_PEMERIKSAAN",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Diterima lengkap dan dapat digunakan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "MENUNGGU_PEMERIKSAAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          },
+          {
+            "status": "MENUNGGU_PEMERIKSAAN",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Diterima lengkap dan dapat digunakan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "MENUNGGU_PEMERIKSAAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          },
+          {
+            "status": "MENUNGGU_PEMERIKSAAN",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Diterima lengkap dan dapat digunakan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/logs",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "event_id": "bbcafcf2-f06b-4c9b-8bfc-af1f83155020",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SEDANG_DIPINJAM",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "95b1fec5-7a94-4f30-9f4a-6df315cc9a1c",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:51+07:00",
+        "booking_id": 1,
+        "stage": "SIAP_DIAMBIL",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "burst",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "DOUBLE_TAP",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "esp32-test-1",
+        "tag_id": "DEMO0002",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T15:10:45.330Z",
+        "booking_id": 1,
+        "stage": "DIPESAN",
+        "result": "VALID",
+        "confirmed_at": "2026-11-27T22:10:51+07:00"
+      },
+      {
+        "event_id": "mismatch-tag",
+        "tag_id": "DEMO0001",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_TRANSACTION_MISMATCH",
+        "confirmed_at": null
+      },
+      {
+        "event_id": "unknown-tag",
+        "tag_id": "UNKNOWN",
+        "device_id": "MITRA_01",
+        "timestamp": "2026-11-27T22:10:45+07:00",
+        "booking_id": null,
+        "stage": null,
+        "result": "TAG_NOT_REGISTERED",
+        "confirmed_at": null
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "MENUNGGU_PEMERIKSAAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          },
+          {
+            "status": "MENUNGGU_PEMERIKSAAN",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Diterima lengkap dan dapat digunakan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/iot/status",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01",
+      "online": false
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "MENUNGGU_PEMERIKSAAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          },
+          {
+            "status": "MENUNGGU_PEMERIKSAAN",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Diterima lengkap dan dapat digunakan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/offers",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 0,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "POST",
+    "path": "/api/bookings/1/finish",
+    "input": {
+      "condition": "Pemeriksaan akhir baik dan semua bagian lengkap"
+    },
+    "status": 200,
+    "actual": {
+      "id": 1,
+      "item_id": 2,
+      "starts": "2026-11-27",
+      "ends": "2026-11-28",
+      "total": 15000,
+      "status": "SELESAI",
+      "timeline": [
+        {
+          "status": "MENUNGGU_PERSETUJUAN",
+          "timestamp": "2026-11-27T22:10:43+07:00",
+          "note": "Pengajuan diterima"
+        },
+        {
+          "status": "DISETUJUI",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pemilik menyetujui pengajuan"
+        },
+        {
+          "status": "DIPESAN",
+          "timestamp": "2026-11-27T22:10:44+07:00",
+          "note": "Pembayaran simulasi tercatat"
+        },
+        {
+          "status": "SIAP_DIAMBIL",
+          "timestamp": "2026-11-27T22:10:51+07:00",
+          "note": "Baik, kaki tripod dan penjepit lengkap"
+        },
+        {
+          "status": "SEDANG_DIPINJAM",
+          "timestamp": "2026-11-27T22:10:51+07:00",
+          "note": "Baik, lengkap"
+        },
+        {
+          "status": "MENUNGGU_PEMERIKSAAN",
+          "timestamp": "2026-11-27T22:10:51+07:00",
+          "note": "Diterima lengkap dan dapat digunakan"
+        },
+        {
+          "status": "SELESAI",
+          "timestamp": "2026-11-27T22:10:53+07:00",
+          "note": "Pemeriksaan akhir baik dan semua bagian lengkap"
+        }
+      ],
+      "accepted_terms": "Kembalikan lengkap",
+      "item_name": "Tripod Aluminium",
+      "location": "Titik penitipan"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/offers",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0001"
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0002"
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1,
+        "rfid_uid": "DEMO0003"
+      },
+      {
+        "id": 4,
+        "name": "Penyangga Ponsel Meja",
+        "description": "Dudukan smartphone stabil untuk perekaman video.",
+        "daily_rate": 12000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan dengan penjepit lengkap.",
+        "location": "Titik penitipan TapRent ITB",
+        "photo": null,
+        "active": 0,
+        "rfid_uid": "DEMO-NEW-01"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "status": "SELESAI",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          },
+          {
+            "status": "MENUNGGU_PEMERIKSAAN",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Diterima lengkap dan dapat digunakan"
+          },
+          {
+            "status": "SELESAI",
+            "timestamp": "2026-11-27T22:10:53+07:00",
+            "note": "Pemeriksaan akhir baik dan semua bagian lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "SELESAI",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          },
+          {
+            "status": "MENUNGGU_PEMERIKSAAN",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Diterima lengkap dan dapat digunakan"
+          },
+          {
+            "status": "SELESAI",
+            "timestamp": "2026-11-27T22:10:53+07:00",
+            "note": "Pemeriksaan akhir baik dan semua bagian lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "SELESAI",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          },
+          {
+            "status": "MENUNGGU_PEMERIKSAAN",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Diterima lengkap dan dapat digunakan"
+          },
+          {
+            "status": "SELESAI",
+            "timestamp": "2026-11-27T22:10:53+07:00",
+            "note": "Pemeriksaan akhir baik dan semua bagian lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/items/search?starts=2026-11-27&ends=2026-11-28&q=tripod&budget=25000",
+    "status": 200,
+    "actual": {
+      "mode": "keyword_fallback",
+      "items": [
+        {
+          "id": 2,
+          "name": "Tripod Aluminium",
+          "description": "Dudukan ponsel stabil untuk merekam video",
+          "daily_rate": 15000,
+          "available_from": "2026-11-27",
+          "available_until": "2026-11-28",
+          "terms": "Kembalikan lengkap",
+          "location": "Titik penitipan",
+          "photo": null,
+          "active": 1,
+          "total": 15000
+        }
+      ],
+      "criteria": {
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "days": 1,
+        "budget": 25000
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/config",
+    "input": null,
+    "status": 200,
+    "actual": {
+      "device_id": "MITRA_01"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/bookings",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 3,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DIBATALKAN",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DIBATALKAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Reservasi dibatalkan sebelum penitipan"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 2,
+        "item_id": 3,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 10000,
+        "pickup_code": null,
+        "status": "DITOLAK",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DITOLAK",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan ditolak pemilik"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Mikrofon",
+        "location": "Titik penitipan"
+      },
+      {
+        "id": 1,
+        "item_id": 2,
+        "starts": "2026-11-27",
+        "ends": "2026-11-28",
+        "total": 15000,
+        "pickup_code": "26879D3B",
+        "status": "SELESAI",
+        "timeline": [
+          {
+            "status": "MENUNGGU_PERSETUJUAN",
+            "timestamp": "2026-11-27T22:10:43+07:00",
+            "note": "Pengajuan diterima"
+          },
+          {
+            "status": "DISETUJUI",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pemilik menyetujui pengajuan"
+          },
+          {
+            "status": "DIPESAN",
+            "timestamp": "2026-11-27T22:10:44+07:00",
+            "note": "Pembayaran simulasi tercatat"
+          },
+          {
+            "status": "SIAP_DIAMBIL",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, kaki tripod dan penjepit lengkap"
+          },
+          {
+            "status": "SEDANG_DIPINJAM",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Baik, lengkap"
+          },
+          {
+            "status": "MENUNGGU_PEMERIKSAAN",
+            "timestamp": "2026-11-27T22:10:51+07:00",
+            "note": "Diterima lengkap dan dapat digunakan"
+          },
+          {
+            "status": "SELESAI",
+            "timestamp": "2026-11-27T22:10:53+07:00",
+            "note": "Pemeriksaan akhir baik dan semua bagian lengkap"
+          }
+        ],
+        "accepted_terms": "Kembalikan lengkap",
+        "item_name": "Tripod Aluminium",
+        "location": "Titik penitipan"
+      }
+    ]
+  },
+  {
+    "method": "GET",
+    "path": "/api/items",
+    "input": null,
+    "status": 200,
+    "actual": [
+      {
+        "id": 1,
+        "name": "Kalkulator",
+        "description": "Perhitungan matematika",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "name": "Tripod Aluminium",
+        "description": "Dudukan ponsel stabil untuk merekam video",
+        "daily_rate": 15000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Mikrofon",
+        "description": "Merekam audio",
+        "daily_rate": 10000,
+        "available_from": "2026-11-27",
+        "available_until": "2026-11-28",
+        "terms": "Kembalikan lengkap",
+        "location": "Titik penitipan",
+        "photo": null,
+        "active": 1
+      }
+    ]
+  }
+]

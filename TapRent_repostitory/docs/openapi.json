@@ -1,0 +1,1030 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "REST API Prototipe TapRent",
+    "version": "0.4.0",
+    "description": "TapRent revisi: registrasi dua peran publik, akses berbasis sesi, pencarian Sentence Transformer."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8000"
+    }
+  ],
+  "paths": {
+    "/api/config": {
+      "get": {
+        "summary": "Konfigurasi simulator",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        }
+      }
+    },
+    "/api/items": {
+      "get": {
+        "summary": "Katalog",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        }
+      }
+    },
+    "/api/items/search": {
+      "get": {
+        "summary": "Pencarian semantik dan kata kunci",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Input tidak valid"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        },
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "starts",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "ends",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "budget",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        ],
+        "description": "Filter penawaran aktif, jadwal, dan biaya, lalu urutkan dengan cosine similarity. Mode sentence_transformer, keyword_fallback, atau no_candidates."
+      }
+    },
+    "/api/bookings": {
+      "get": {
+        "summary": "Daftar reservasi demo",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        }
+      },
+      "post": {
+        "summary": "Ajukan reservasi sebagai Penyewa",
+        "responses": {
+          "201": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Input tidak valid"
+          },
+          "404": {
+            "description": "Barang tidak ditemukan"
+          },
+          "409": {
+            "description": "SCHEDULE_CONFLICT"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "item_id",
+                  "starts",
+                  "ends",
+                  "accept_terms"
+                ],
+                "properties": {
+                  "item_id": {
+                    "type": "integer"
+                  },
+                  "starts": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "ends": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "accept_terms": {
+                    "type": "boolean",
+                    "enum": [
+                      true
+                    ]
+                  },
+                  "expected_terms": {
+                    "type": "string",
+                    "description": "Ketentuan yang dilihat penyewa. Perubahan isi menghasilkan HTTP 409."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/bookings/{id}/approve": {
+      "post": {
+        "summary": "Setujui pengajuan oleh Pemilik",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Masukan tidak valid"
+          },
+          "404": {
+            "description": "Pesanan tidak ditemukan"
+          },
+          "409": {
+            "description": "Aksi tidak sesuai peran atau status"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/api/bookings/{id}/reject": {
+      "post": {
+        "summary": "Tolak pengajuan oleh Pemilik",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Masukan tidak valid"
+          },
+          "404": {
+            "description": "Pesanan tidak ditemukan"
+          },
+          "409": {
+            "description": "Aksi tidak sesuai peran atau status"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/api/bookings/{id}/pay": {
+      "post": {
+        "summary": "Catat pembayaran simulasi oleh Penyewa",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Masukan tidak valid"
+          },
+          "404": {
+            "description": "Pesanan tidak ditemukan"
+          },
+          "409": {
+            "description": "Aksi tidak sesuai peran atau status"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "simulation"
+                ],
+                "properties": {
+                  "simulation": {
+                    "type": "boolean",
+                    "enum": [
+                      true
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/bookings/{id}/cancel": {
+      "post": {
+        "summary": "Batalkan sebelum penitipan oleh Penyewa",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Masukan tidak valid"
+          },
+          "404": {
+            "description": "Pesanan tidak ditemukan"
+          },
+          "409": {
+            "description": "Aksi tidak sesuai peran atau status"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/api/bookings/{id}/finish": {
+      "post": {
+        "summary": "Selesaikan pemeriksaan akhir oleh Pemilik",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Masukan tidak valid"
+          },
+          "404": {
+            "description": "Pesanan tidak ditemukan"
+          },
+          "409": {
+            "description": "Aksi tidak sesuai peran atau status"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "condition"
+                ],
+                "properties": {
+                  "condition": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/iot/status": {
+      "get": {
+        "summary": "Indikator koneksi perangkat",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "404": {
+            "description": "Endpoint tidak tersedia untuk pemanggil"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        }
+      }
+    },
+    "/api/iot/logs": {
+      "get": {
+        "summary": "Riwayat pemindaian",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "403": {
+            "description": "Akses petugas diperlukan"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        }
+      }
+    },
+    "/api/iot/scan": {
+      "post": {
+        "summary": "Kirim pindai dari simulator web",
+        "responses": {
+          "201": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Input pindai tidak valid"
+          },
+          "403": {
+            "description": "Perangkat tidak terdaftar"
+          },
+          "409": {
+            "description": "Pindai duplikat"
+          },
+          "422": {
+            "description": "Tag tidak dikenal atau tidak cocok"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "tag_id",
+                  "device_id",
+                  "event_id"
+                ],
+                "properties": {
+                  "tag_id": {
+                    "type": "string"
+                  },
+                  "device_id": {
+                    "type": "string"
+                  },
+                  "event_id": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/iot/confirm": {
+      "post": {
+        "summary": "Konfirmasi serah terima setelah pindai",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "400": {
+            "description": "Masukan tidak valid"
+          },
+          "403": {
+            "description": "Aksi tidak tersedia untuk peran ini"
+          },
+          "409": {
+            "description": "Log atau tahap tidak sesuai"
+          },
+          "422": {
+            "description": "Kode salah"
+          },
+          "401": {
+            "description": "Sesi tidak tersedia atau berakhir"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "event_id",
+                  "condition"
+                ],
+                "properties": {
+                  "event_id": {
+                    "type": "string"
+                  },
+                  "condition": {
+                    "type": "string"
+                  },
+                  "pickup_code": {
+                    "type": "string",
+                    "description": "Wajib pada tahap pengambilan."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rfid/scans": {
+      "post": {
+        "summary": "Kirim pindai dari perangkat",
+        "responses": {
+          "201": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "401": {
+            "description": "Kunci perangkat tidak valid"
+          },
+          "400": {
+            "description": "Input pindai tidak valid"
+          },
+          "403": {
+            "description": "Perangkat tidak terdaftar"
+          },
+          "409": {
+            "description": "Pindai duplikat"
+          },
+          "422": {
+            "description": "Tag tidak dikenal atau tidak cocok"
+          }
+        },
+        "security": [
+          {
+            "DeviceKey": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "tag_uid",
+                  "device_id",
+                  "scan_event_id",
+                  "scanned_at"
+                ],
+                "properties": {
+                  "tag_uid": {
+                    "type": "string"
+                  },
+                  "device_id": {
+                    "type": "string"
+                  },
+                  "scan_event_id": {
+                    "type": "string"
+                  },
+                  "scanned_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rfid/heartbeat": {
+      "post": {
+        "summary": "Perbarui indikasi koneksi perangkat",
+        "responses": {
+          "200": {
+            "description": "Berhasil",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "401": {
+            "description": "Kunci perangkat tidak valid"
+          },
+          "403": {
+            "description": "Perangkat tidak terdaftar"
+          }
+        },
+        "security": [
+          {
+            "DeviceKey": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "device_id"
+                ],
+                "properties": {
+                  "device_id": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/login": {
+      "post": {
+        "summary": "Masuk",
+        "responses": {
+          "200": {
+            "description": "Berhasil"
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "username",
+                  "password"
+                ],
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/register": {
+      "post": {
+        "summary": "Daftarkan Peminjam atau Penyewa (Pemilik Barang)",
+        "responses": {
+          "201": {
+            "description": "Berhasil"
+          },
+          "400": {
+            "description": "Data atau peran tidak valid"
+          },
+          "409": {
+            "description": "Username sudah dipakai"
+          }
+        },
+        "security": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "username",
+                  "name",
+                  "password",
+                  "role"
+                ],
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "peminjam",
+                      "penyewa_pemilik"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/me": {
+      "get": {
+        "summary": "Baca sesi aktif",
+        "responses": {
+          "200": {
+            "description": "Berhasil"
+          }
+        }
+      }
+    },
+    "/api/auth/logout": {
+      "post": {
+        "summary": "Akhiri sesi",
+        "responses": {
+          "200": {
+            "description": "Berhasil"
+          }
+        },
+        "security": []
+      }
+    },
+    "/api/offers": {
+      "get": {
+        "summary": "Penawaran milik akun Pemilik",
+        "responses": {
+          "200": {
+            "description": "Berhasil"
+          },
+          "400": {
+            "description": "Input tidak valid"
+          },
+          "401": {
+            "description": "Sesi dibutuhkan"
+          },
+          "403": {
+            "description": "Aksi memerlukan peran Pemilik"
+          },
+          "409": {
+            "description": "UID duplikat atau data dikunci transaksi aktif"
+          }
+        }
+      },
+      "post": {
+        "summary": "Terbitkan penawaran",
+        "responses": {
+          "201": {
+            "description": "Berhasil"
+          },
+          "400": {
+            "description": "Input tidak valid"
+          },
+          "401": {
+            "description": "Sesi dibutuhkan"
+          },
+          "403": {
+            "description": "Aksi memerlukan peran Pemilik"
+          },
+          "409": {
+            "description": "UID duplikat atau data dikunci transaksi aktif"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "description",
+                  "location",
+                  "terms",
+                  "rfid_uid",
+                  "available_from",
+                  "available_until",
+                  "daily_rate"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "string"
+                  },
+                  "terms": {
+                    "type": "string"
+                  },
+                  "rfid_uid": {
+                    "type": "string"
+                  },
+                  "available_from": {
+                    "type": "string"
+                  },
+                  "available_until": {
+                    "type": "string"
+                  },
+                  "daily_rate": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "photo": {
+                    "type": "string",
+                    "description": "Opsional. Data URL JPEG, PNG atau WebP hingga 250 KiB."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/offers/{id}/edit": {
+      "post": {
+        "summary": "Ubah penawaran",
+        "responses": {
+          "200": {
+            "description": "Berhasil"
+          },
+          "400": {
+            "description": "Input tidak valid"
+          },
+          "401": {
+            "description": "Sesi dibutuhkan"
+          },
+          "403": {
+            "description": "Aksi memerlukan peran Pemilik"
+          },
+          "409": {
+            "description": "UID duplikat atau data dikunci transaksi aktif"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "description",
+                  "location",
+                  "terms",
+                  "rfid_uid",
+                  "available_from",
+                  "available_until",
+                  "daily_rate"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "string"
+                  },
+                  "terms": {
+                    "type": "string"
+                  },
+                  "rfid_uid": {
+                    "type": "string"
+                  },
+                  "available_from": {
+                    "type": "string"
+                  },
+                  "available_until": {
+                    "type": "string"
+                  },
+                  "daily_rate": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "photo": {
+                    "type": "string",
+                    "description": "Opsional. Data URL JPEG, PNG atau WebP hingga 250 KiB."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    },
+    "/api/offers/{id}/visibility": {
+      "post": {
+        "summary": "Atur visibilitas penawaran",
+        "responses": {
+          "200": {
+            "description": "Berhasil"
+          },
+          "400": {
+            "description": "Input tidak valid"
+          },
+          "401": {
+            "description": "Sesi dibutuhkan"
+          },
+          "403": {
+            "description": "Aksi memerlukan peran Pemilik"
+          },
+          "409": {
+            "description": "UID duplikat atau data dikunci transaksi aktif"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "active"
+                ],
+                "properties": {
+                  "active": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "DeviceKey": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-Device-Key"
+      },
+      "BrowserSession": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "taprent_session"
+      }
+    }
+  },
+  "security": [
+    {
+      "BrowserSession": []
+    }
+  ]
+}
